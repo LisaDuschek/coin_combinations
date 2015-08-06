@@ -6,7 +6,7 @@
 
 ## Description
 
-This app takes a numerical input from the user that represents the amount of cents they have. The app then takes that number and returns how many of each coin (quarter, dime, nickel, penny) that amount of cents would be.
+This app takes a numerical input from the user that represents the amount of cents they have. The app then takes that number and returns how many of each coin (quarter, dime, nickel, penny) that amount of cents would be. App can be found at https://peaceful-plains-3134.herokuapp.com/
 
 ## Setup
 
