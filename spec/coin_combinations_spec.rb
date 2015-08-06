@@ -14,4 +14,9 @@ describe('Fixnum#combine') do
     expect((40).combine).to(eq('1 quarters, 1 dimes, 1 nickels, 0 pennies'))
   end
 
+  it('takes user input and returns the amount of quarters, dimes, nickels and pennies') do
+    expect((41).combine).to(eq('1 quarters, 1 dimes, 1 nickels, 1 pennies'))
+  end
+
+
 end
