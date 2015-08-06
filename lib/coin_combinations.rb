@@ -24,6 +24,16 @@ class Fixnum
     end
 
 
+    until change.<(5)
+      if change.>=(5)
+        change=change.-(5)
+        nickels=nickels.+(1)
+      end
+    end
+
+
+
+
     output.concat(quarters.to_s()).concat(' quarters, ').concat(dimes.to_s()).concat(' dimes, ').concat(nickels.to_s()).concat(' nickels, ').concat(pennies.to_s()).concat(' pennies')
   end
 end
