@@ -13,9 +13,17 @@ class Fixnum
       if change.>=(25)
         change = change.-(25)
         quarters = quarters.+(1)
-        output.concat(quarters.to_s()).concat(' quarters')
       end
     end
-    output
+
+    until change.<(10)
+      if change.>=(10)
+        change=change.-(10)
+        dimes=dimes.+(1)
+      end
+    end
+
+
+    output.concat(quarters.to_s()).concat(' quarters, ').concat(dimes.to_s()).concat(' dimes, ').concat(nickels.to_s()).concat(' nickels, ').concat(pennies.to_s()).concat(' pennies')
   end
 end
