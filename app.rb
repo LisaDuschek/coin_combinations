@@ -7,6 +7,7 @@ get '/' do
   erb(:index)
 end
 
-get '/game' do
+get '/result' do
+  @result = params.fetch('number').to_i().combine()
   erb(:result)
 end
